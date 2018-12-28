@@ -1,4 +1,0 @@
-﻿  Test.cpp
-c:\phamhuuhoangviet\new folder\test\test\test.cpp(14): error C2065: 'RenderWindow': undeclared identifier
-c:\phamhuuhoangviet\new folder\test\test\test.cpp(14): error C2146: syntax error: missing ';' before identifier 'a'
-c:\phamhuuhoangviet\new folder\test\test\test.cpp(14): error C2065: 'a': undeclared identifier
