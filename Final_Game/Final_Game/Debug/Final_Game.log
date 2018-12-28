@@ -1,16 +1,2 @@
-﻿  Enemy.cpp
-  GameManager.cpp
-  GameOverScene.cpp
-  GamePlayScene.cpp
-  LoadingScene.cpp
-  main.cpp
-  MenuScene.cpp
-  Object.cpp
-  Player.cpp
-  ResourceManager.cpp
-  Scene.cpp
-  SceneManager.cpp
-  Generating Code...
-d:\project\final_game\final_game\resourcemanager.cpp(38): warning C4700: uninitialized local variable 'image' used
-d:\project\final_game\final_game\resourcemanager.cpp(45): warning C4700: uninitialized local variable 'font' used
-  Final_Game.vcxproj -> D:\Project\Final_Game\\BIN\Final_Game.exe
+﻿  main.cpp
+  Final_Game.vcxproj -> D:\GITHUB_TranSyHung\Project\GLFinal\Final_Game\\BIN\Final_Game.exe
