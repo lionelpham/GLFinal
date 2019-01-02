@@ -4,7 +4,7 @@
 
 void Enemy::Update(float dt)
 {
-	sprite.setPosition(sprite.getPosition().x + SPEED * dt, sprite.getPosition().y);
+	sprite.setPosition(sprite.getPosition().x + 1500 * dt, sprite.getPosition().y);
 }
 
 Enemy::Enemy()
