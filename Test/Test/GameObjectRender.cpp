@@ -18,7 +18,7 @@ void GameObjectRender::Init(const char * textureName, int x, int y)
 	//cout << "Ps" << getPositionX();
 }
 
-void GameObjectRender::Update(float dt)
+void GameObjectRender::Update(float dt, View &v)
 {
 
 }

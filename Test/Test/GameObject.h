@@ -9,7 +9,7 @@ class GameObject
 {
 public:
 	virtual void Init(const char* textureName = "", int x = 0, int y = 0) = 0;
-	virtual void Update(float dt) = 0;
+	virtual void Update(float dt, View &v) = 0;
 	virtual void Render(RenderWindow &window) = 0;
 
 	GameObject();

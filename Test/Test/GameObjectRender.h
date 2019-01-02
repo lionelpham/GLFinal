@@ -1,6 +1,5 @@
 #pragma once
 #include "GameObject.h"
-
 #define WINDOWS_W 900
 #define WINDOWS_H 600
 #define FPS_LIMIT 60
@@ -12,7 +11,7 @@ protected:
 	Sprite	sprite;
 public:
 	void Init(const char* textureName = "", int x = 0, int y = 0);
-	void Update(float dt);
+	void Update(float dt, View  &v);
 	void Render(RenderWindow &window);
 	float getPositionX();
 	float getPositionY();
