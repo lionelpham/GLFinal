@@ -19,12 +19,17 @@ GameManager* GameManager::s_Instance = nullptr;
 
 int main()
 {
-	RenderWindow window(VideoMode(WINDOWS_W, WINDOWS_H), "Test",Style::Default);
+	VideoMode vd(WINDOWS_W, WINDOWS_H);
+	View view(Vector2f(WINDOWS_W/2,WINDOWS_H/2),Vector2f(WINDOWS_W,WINDOWS_H));
+	//view.setSize(WINDOWS_W, WINDOWS_H);
+	RenderWindow window(vd, "Test",Style::Default);
 	window.setFramerateLimit(FPS_LIMIT);
 	/*============= Init =============*/
+	//view.zoom(0.5);
 	GameManager::getInstance()->Init();
 	Clock clock;
 	Time elapsed;
+
 	while (window.isOpen())
 	{
 		Event event;
@@ -46,9 +51,24 @@ int main()
 				break;
 			}
 		}
+		elapsed = clock.getElapsedTime();
+		// A microsecond is 1/1,000,000th of a second, 1000 microseconds == 1 millisecond
+		float dt = clock.getElapsedTime().asMicroseconds() * 1.0f / 1000000;
+		clock.restart();
+		
 		/*============= Update =============*/
+		//Mouse::getPosition(window).x -- lấy vị trí ở trong windows
+		if (Mouse::isButtonPressed(Mouse::Left))
+		{
+			
+			view.move(1000*dt, 0);
+			GameManager::getInstance()->Update(dt);
+			
+		}
 		/*============= Draw =============*/
+		
 		window.clear();
+		window.setView(view);
 		GameManager::getInstance()->Render(window);
 		window.display();
 	}

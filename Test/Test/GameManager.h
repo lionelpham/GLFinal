@@ -5,6 +5,7 @@
 #define TEXT "resource/player.png"
 #define WINDOWS_W 900
 #define WINDOWS_H 600
+#define Distance 50
 class GameManager
 {
 	static GameManager* s_Instance;
