@@ -3,6 +3,8 @@
 
 #include <SFML/Graphics.hpp>
 
+#include "Object.h"
+
 using namespace sf;
 
 #define WINDOWS_W	900
@@ -11,7 +13,7 @@ using namespace sf;
 
 #define PLAYER_SPEED	350
 #define TEXTURE_PLAYER	"resources/player.png"
-#define TEXTURE_ENEMY	"resources/a1.png"
+#define TEXTURE_ENEMY	"resources/enemy.png"
 
 
 int main()
@@ -21,10 +23,10 @@ int main()
 	window.setFramerateLimit(FPS_LIMIT);
 
 	// ============================ Init ============================
-
+	Object enemy;
 	Clock clock;
 	Time elapsed;
-
+	enemy.Init(TEXTURE_ENEMY, 200, 200);
 	while (window.isOpen())
 	{
 		Event event;
