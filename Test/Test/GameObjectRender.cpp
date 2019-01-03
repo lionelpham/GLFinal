@@ -4,17 +4,13 @@
 
 void GameObjectRender::Init(const char * textureName, int x, int y)
 {
-	
 	texture.loadFromFile(textureName);
+
 	texture.setSmooth(true);
-	
 	sprite.setTexture(texture);
-	
-	
-	
 	sprite.setScale(0.1,0.1);
-	
-	sprite.setPosition(x,y-y*0.2/2);
+
+	sprite.setPosition(x,y);
 	//cout << "Ps" << getPositionX();
 }
 
@@ -28,15 +24,11 @@ void GameObjectRender::Render(RenderWindow & window)
 	window.draw(sprite);
 }
 
-float GameObjectRender::getPositionX()
+Vector2f GameObjectRender::getPosition()
 {
-	return sprite.getPosition().x;
+	return sprite.getPosition();
 }
 
-float GameObjectRender::getPositionY()
-{
-	return sprite.getPosition().y;
-}
 
 GameObjectRender::GameObjectRender()
 {

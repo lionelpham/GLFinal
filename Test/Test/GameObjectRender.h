@@ -1,6 +1,5 @@
 #pragma once
 #include "GameObject.h"
-
 #define WINDOWS_W 900
 #define WINDOWS_H 600
 #define FPS_LIMIT 60
@@ -14,8 +13,7 @@ public:
 	void Init(const char* textureName = "", int x = 0, int y = 0);
 	void Update(float dt);
 	void Render(RenderWindow &window);
-	float getPositionX();
-	float getPositionY();
+	Vector2f getPosition();
 	GameObjectRender();
 	~GameObjectRender();
 };

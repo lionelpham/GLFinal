@@ -3,8 +3,10 @@
 
 class Player : public GameObjectRender
 {
+private:
+
 public:
-	void Update(float dt);
+	void Update(float dt) override;
 	Player();
 	~Player();
 };
