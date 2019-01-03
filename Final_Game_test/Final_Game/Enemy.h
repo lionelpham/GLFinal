@@ -8,6 +8,9 @@ public:
 	Enemy();
 	~Enemy();
 	void setType(int type);
+	void EnemyUp(float &);
+	void EnemyDown(float &);
+	void EnemyRotate();
 	void Update(float dt);
 };
 

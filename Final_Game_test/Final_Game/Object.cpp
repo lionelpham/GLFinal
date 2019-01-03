@@ -14,13 +14,23 @@ void Object::Init(const string path)
 {
 	m_texture.loadFromFile(path);
 	m_sprite.setTexture(m_texture);
-	if (m_type == 1)
+	switch (m_type)
+	{
+	case 1:
 	{
 		m_sprite.setPosition(300, 0);
+		break;
 	}
-	else
+	case 2:
 	{
 		m_sprite.setPosition(300, WINDOWS_H - m_texture.getSize().y);
+		break;
+	}
+	case 3:
+	{
+		m_sprite.setPosition(WINDOWS_W / 2, WINDOWS_H / 2);
+		return;
+	}
 	}
 }
 

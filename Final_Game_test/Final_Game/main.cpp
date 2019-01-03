@@ -26,18 +26,16 @@ int main()
 	// ============================ Init ============================
 	Enemy enemy1;
 	Enemy enemy2;
+	Enemy enemy3;
 	Clock clock;
 	Time elapsed;
 	enemy1.setType(1);
 	enemy1.Init(TEXTURE_ENEMY);
-	enemy2.setType(-1);
+	enemy2.setType(2);
 	enemy2.Init(TEXTURE_ENEMY);
-	sf::CircleShape tron(100);
-	sf::Shape shape(tron);
-	shape.setPosition(100, 100);
+	enemy3.setType(3);
+	enemy3.Init(TEXTURE_ENEMY);
 
-	//sf::RectangleShape shape(0,0,300);
-	shape.setFillColor(sf::Color::Green);
 	while (window.isOpen())
 	{
 		Event event;
@@ -55,13 +53,15 @@ int main()
 		clock.restart();
 
 		// ================================ Update ================================ 
-		/*enemy1.Update(dt);
-		enemy2.Update(dt);*/
+		enemy1.Update(dt);
+		enemy2.Update(dt);
+		enemy3.Update(dt);
 		// ================================ Draw ================================ 
 		window.clear();
-		window.draw(shape);
-		/*enemy1.Render(window);
-		enemy2.Render(window);*/
+	
+		enemy1.Render(window);
+		enemy2.Render(window);
+		enemy3.Render(window);
 		window.display();
 	}
 
