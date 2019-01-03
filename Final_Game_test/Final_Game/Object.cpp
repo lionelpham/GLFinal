@@ -9,6 +9,11 @@ Object::~Object()
 {
 }
 
+void Object::setType(int type)
+{
+	m_type = type;
+
+}
 
 void Object::Init(const string path)
 {

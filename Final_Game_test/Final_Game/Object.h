@@ -22,8 +22,10 @@ protected:
 public:
 	Object();
 	~Object();
+	void setType(int type);
 	void Init(const string path);
 	void Update(float deltaTime);
 	void Render(sf::RenderWindow &window);
+
 };
 

@@ -24,16 +24,20 @@ SceneManager* SceneManager::GetInstance()
 
 void SceneManager::Init(const string path)
 {
+	m_currentScene = new GamePlayScene();
+	m_currentScene->OnInit();
 }
 
 
 void SceneManager::Update(float deltaTime)
 {
+	m_currentScene->OnUpdate(deltaTime);
 }
 
 
 void SceneManager::Render(sf::RenderWindow &window)
 {
+	m_currentScene->OnRender(window);
 }
 
 

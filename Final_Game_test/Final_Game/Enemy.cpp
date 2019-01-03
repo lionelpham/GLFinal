@@ -10,11 +10,8 @@ Enemy::Enemy()
 Enemy::~Enemy()
 {
 }
-
-
 void Enemy::setType(int type)
 {
-	m_type = type;
 	switch (m_type)
 	{
 	case 1:
@@ -56,18 +53,21 @@ void Enemy::EnemyRotate()
 void Enemy::Update(float dt)
 {
 	auto pos = m_sprite.getPosition();
-	if (m_type == 2)
-	{
-		pos.y += ENEMY_SPEED * dt*m_dir;
-		EnemyUp(pos.y);
-		m_sprite.setPosition(pos);
-	}
 	switch (m_type)
 	{
 		case 1:
 		{
 			pos.y += ENEMY_SPEED * dt*m_dir;
+			std::cout << pos.y << endl;
 			EnemyDown(pos.y);
+			m_sprite.setPosition(pos);
+			break;
+		}
+		case 2:
+		{
+			pos.y += ENEMY_SPEED * dt*m_dir;
+			std::cout << pos.y << endl;
+			EnemyUp(pos.y);
 			m_sprite.setPosition(pos);
 			break;
 		}
