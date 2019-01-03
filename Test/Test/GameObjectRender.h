@@ -11,10 +11,9 @@ protected:
 	Sprite	sprite;
 public:
 	void Init(const char* textureName = "", int x = 0, int y = 0);
-	void Update(float dt, View  &v);
+	void Update(float dt);
 	void Render(RenderWindow &window);
-	float getPositionX();
-	float getPositionY();
+	Vector2f getPosition();
 	GameObjectRender();
 	~GameObjectRender();
 };

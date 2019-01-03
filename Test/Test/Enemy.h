@@ -4,7 +4,7 @@ class Enemy :
 	public GameObjectRender
 {
 public:
-	void Update(float dt, View &v) override;
+	void Update(float dt) override;
 	Enemy();
 	~Enemy();
 };

@@ -4,7 +4,10 @@ class Background :
 	public GameObjectRender
 {
 public:
-	void Update(float dt, View &v) override;
+	void Init(const char * textureName, int x, int y) override;
+	void setSize();
+	void Update(float dt) override;
+	void Move(Vector2f f);
 	Background();
 	~Background();
 };

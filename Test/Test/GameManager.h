@@ -16,8 +16,10 @@ class GameManager
 	Background br;
 public:
 	void Init();
-	void Update(float dt, View &v);
+	void Update(float dt);
 	void Render(RenderWindow &window);
+	void brMove();
+	void brUpdate(float dt);
 	static GameManager* getInstance()
 	{
 		if (s_Instance == nullptr)
@@ -26,9 +28,9 @@ public:
 		}
 		return s_Instance;
 	}
-	float dis()
+	Vector2f dis()
 	{
-		return player.getDis();
+		return player.getPosition();
 	}
 	GameManager();
 	~GameManager();

@@ -2,16 +2,14 @@
 #include "Player.h"
 
 
-void Player::Update(float dt, View &v)
+void Player::Update(float dt)
 {
-	s = (SPEED-50) * dt;
-	sprite.setPosition(sprite.getPosition().x + SPEED*dt,sprite.getPosition().y);
-	cout << sprite.getPosition().x << " " << sprite.getPosition().y << endl;
+	sprite.setPosition(sprite.getPosition().x + 2*SPEED*dt,sprite.getPosition().y);
 }
 
 Player::Player()
 {
-	s = 0;
+	
 }
 
 
