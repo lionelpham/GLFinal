@@ -1,0 +1,14 @@
+﻿  Enemy.cpp
+d:\project\final_game_test\final_game\enemy.cpp(76): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Object.cpp
+d:\project\final_game_test\final_game\object.cpp(26): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+  Generating Code...
+  Final_Game.vcxproj -> D:\Project\Final_Game_test\\BIN\Final_Game.exe

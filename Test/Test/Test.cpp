@@ -12,14 +12,31 @@
 
 #define FPS_LIMIT 60
 #define SPEED 350
+<<<<<<< HEAD
+
+=======
 #define SPEED_VIEW 200
 #define SPEED_ENEMY 300
+>>>>>>> master
 using namespace sf;
 using namespace std;
 GameManager* GameManager::s_Instance = nullptr;
 
 int main()
 {
+<<<<<<< HEAD
+	RenderWindow window(VideoMode(WINDOWS_W, WINDOWS_H), "Test",Style::Default);
+	window.setFramerateLimit(FPS_LIMIT);
+	/*============= Init =============*/
+	GameManager::getInstance()->Init();
+	Clock clock;
+	Time elapsed;
+	while (window.isOpen())
+	{
+		Event event;
+		while (window.pollEvent(event))
+		{
+=======
 	VideoMode vd(WINDOWS_W, WINDOWS_H);
 	//View view(Vector2f(WINDOWS_W/2,WINDOWS_H/2),Vector2f(WINDOWS_W,WINDOWS_H));
 	View view(FloatRect(0,0,WINDOWS_W, WINDOWS_H));
@@ -43,6 +60,7 @@ int main()
 		while (window.pollEvent(event))
 		{
 			
+>>>>>>> master
 			switch (event.type)
 			{
 			case Event::Closed:
@@ -59,6 +77,11 @@ int main()
 				break;
 			}
 		}
+<<<<<<< HEAD
+		/*============= Update =============*/
+		/*============= Draw =============*/
+		window.clear();
+=======
 		elapsed = clock.getElapsedTime();
 		// A microsecond is 1/1,000,000th of a second, 1000 microseconds == 1 millisecond
 		float dt = clock.getElapsedTime().asMicroseconds() * 1.0f / 1000000;
@@ -92,6 +115,7 @@ int main()
 		window.clear();
 		window.setView(view);
 		//window.draw(sprite);
+>>>>>>> master
 		GameManager::getInstance()->Render(window);
 		window.display();
 	}

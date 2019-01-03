@@ -156,7 +156,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
     <ClInclude Include="Background.h" />
+>>>>>>> master
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="GameObject.h" />
@@ -165,7 +168,10 @@
     <ClInclude Include="Player.h" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
     <ClCompile Include="Background.cpp" />
+>>>>>>> master
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="GameObject.cpp" />

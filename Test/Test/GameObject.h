@@ -1,6 +1,9 @@
 #pragma once
 #include "SFML/Graphics.hpp"
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 #include <iostream>
 using namespace std;
 using namespace sf;
