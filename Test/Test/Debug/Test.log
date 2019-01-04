@@ -1,2 +1,4 @@
-﻿  Background.cpp
+﻿  Test.cpp
+c:\phamhuuhoangviet\github\glfinal\test\test\test.cpp(14): warning C4005: 'SPEED': macro redefinition
+  c:\phamhuuhoangviet\github\glfinal\test\test\gameobjectrender.h(6): note: see previous definition of 'SPEED'
   Test.vcxproj -> C:\PhamHuuHoangViet\Github\GLFinal\Test\\BIN\Test.exe

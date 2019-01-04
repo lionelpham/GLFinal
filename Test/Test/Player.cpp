@@ -4,12 +4,12 @@
 
 void Player::Update(float dt)
 {
-	sprite.setPosition(sprite.getPosition().x + 2*SPEED*dt,sprite.getPosition().y);
+	sprite.setPosition(sprite.getPosition().x + 2*veloc*dt,sprite.getPosition().y);
 }
 
 Player::Player()
 {
-	
+	veloc = SPEED;
 }
 
 

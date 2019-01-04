@@ -11,7 +11,7 @@
 #include"GameManager.h"
 
 #define FPS_LIMIT 60
-#define SPEED 350
+#define SPEED 500
 #define SPEED_VIEW 200
 #define SPEED_ENEMY 300
 using namespace sf;
@@ -32,7 +32,9 @@ int main()
 	//view.zoom(0.5);
 	GameManager::getInstance()->Init();
 	Clock clock;
+
 	Time elapsed;
+	//int counter = 0;
 	
 	while (window.isOpen())
 	{
@@ -60,30 +62,42 @@ int main()
 			}
 		}
 		elapsed = clock.getElapsedTime();
+		
 		// A microsecond is 1/1,000,000th of a second, 1000 microseconds == 1 millisecond
 		float dt = clock.getElapsedTime().asMicroseconds() * 1.0f / 1000000;
 		
 		clock.restart();
 		
-		
+		GameManager::getInstance()->brUpdate(dt);
 		/*============= Update =============*/
 		//Mouse::getPosition(window).x -- lấy vị trí ở trong windows
-		if (Mouse::isButtonPressed(Mouse::Left))
+		if (event.type == Event::MouseButtonPressed)
 		{
-			//counterClick++;
+			if(event.mouseButton.button == Mouse::Left)
 			GameManager::getInstance()->Update(dt);
+			//counter++;
+		}
+		//cout << counter << endl;
+		//if (event.type == Event::MouseButtonReleased) {
 			
-		}
-		GameManager::getInstance()->brUpdate(dt);
-		cout << GameManager::getInstance()->dis().x << "  " << view.getCenter().x - WINDOWS_W / 2<<endl;
-		
-		float distance = (view.getCenter().x - WINDOWS_W / 2) - GameManager::getInstance()->dis().x;
-		cout << "dis " << distance << endl;
-		
-		if (distance < 0) {
-			view.move(Vector2f(SPEED_VIEW*dt, 0));
-			//view.setCenter(Vector2f(view.getCenter().x + SPEED_VIEW * dt, view.getCenter().y));
-		}
+			
+			cout << GameManager::getInstance()->dis().x << "  " << view.getCenter().x<<endl;
+			//update lai view
+			float distance = (view.getCenter().x - WINDOWS_W / 2) - GameManager::getInstance()->dis().x;
+			cout << "dis " << distance << endl;
+			if (-distance > 100)
+			{
+				view.move(Vector2f((4*SPEED_VIEW*dt), 0));
+			}
+			else if (-distance > 50)
+			{
+				view.move(Vector2f((2 * SPEED_VIEW*dt), 0));
+			}
+			else if (-distance>0) { 
+				view.move(Vector2f((SPEED_VIEW*dt), 0));
+				//view.setCenter(Vector2f(view.getCenter().x + SPEED_VIEW * dt, view.getCenter().y));
+			}
+		//}
 
 		//cout << view.getCenter().x << " " << view.getCenter().y << endl;
 		/*============= Draw =============*/

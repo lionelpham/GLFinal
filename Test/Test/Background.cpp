@@ -8,7 +8,7 @@ void Background::Init(const char * textureName, int x, int y)
 	texture.loadFromFile(textureName);
 	texture.setRepeated(true);
 	sprite.setTexture(texture);
-	sprite.setTextureRect(IntRect(0, 0, WINDOWS_W*100, WINDOWS_H*100));
+	sprite.setTextureRect(IntRect(0, 0, WINDOWS_W*10, WINDOWS_H*10));
 	
 }
 
@@ -19,7 +19,7 @@ void Background::setSize()
 
 void Background::Update(float dt)
 {
-	sprite.setPosition(sprite.getPosition().x + 50 * dt*-1, sprite.getPosition().y);
+	sprite.setPosition(sprite.getPosition().x + 50 * 0.01*-1, sprite.getPosition().y);
 }
 
 void Background::Move(Vector2f f)

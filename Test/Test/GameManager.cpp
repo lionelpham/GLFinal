@@ -8,14 +8,14 @@ void GameManager::Init()
 	br.Init("resource/br.jpg",0,300);
 	
 	
-	//enemy.Init(TEXT, 100, 300);
+	enemy.Init(TEXT, 200, 300);
 }
 
 void GameManager::Update(float dt)
 {
 	player.Update(dt);
-	
-	//enemy.Update(dt);
+	//check collision
+	enemy.Update(dt);
 }
 
 void GameManager::Render(RenderWindow & window)
@@ -23,7 +23,7 @@ void GameManager::Render(RenderWindow & window)
 	br.Render(window);
 	player.Render(window);
 	
-	//enemy.Render(window);
+	enemy.Render(window);
 }
 
 void GameManager::brMove()

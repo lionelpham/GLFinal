@@ -4,7 +4,8 @@
 class Player : public GameObjectRender
 {
 private:
-
+	float veloc;
+	float mass;
 public:
 	void Update(float dt) override;
 	Player();

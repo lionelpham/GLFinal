@@ -5,6 +5,8 @@ class Enemy :
 {
 public:
 	void Update(float dt) override;
+	Vector2f getPosition();
+
 	Enemy();
 	~Enemy();
 };
