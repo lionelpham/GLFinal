@@ -25,18 +25,10 @@ int main()
 	window.setFramerateLimit(FPS_LIMIT);
 
 	// ============================ Init ============================
-	/*Enemy enemy1;
-	Enemy enemy2;
-	Enemy enemy3;*/
+
 	SceneManager::GetInstance()->Init(TEXTURE_ENEMY);
 	Clock clock;
 	Time elapsed;
-	/*enemy1.setType(1);
-	enemy1.Init(TEXTURE_ENEMY);
-	enemy2.setType(2);
-	enemy2.Init(TEXTURE_ENEMY);
-	enemy3.setType(3);
-	enemy3.Init(TEXTURE_ENEMY);*/
 
 	while (window.isOpen())
 	{
@@ -54,16 +46,15 @@ int main()
 		clock.restart();
 
 		// ================================ Update ================================ 
-		/*enemy1.Update(dt);
-		enemy2.Update(dt);
-		enemy3.Update(dt);*/
+
 		SceneManager::GetInstance()->Update(dt);
+
 		// ================================ Draw ================================ 
+
 		window.clear();
+
 		SceneManager::GetInstance()->Render(window);
-		/*enemy1.Render(window);
-		enemy2.Render(window);
-		enemy3.Render(window);*/
+
 		window.display();
 	}
 

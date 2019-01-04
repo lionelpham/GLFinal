@@ -1,6 +1,9 @@
 #pragma once
+
 #include "SFML/Graphics.hpp"
 #include <string>
+
+#include "Collision.h"
 
 #define WINDOWS_W	900
 #define WINDOWS_H	600
@@ -22,10 +25,12 @@ protected:
 public:
 	Object();
 	~Object();
-	void setType(int type);
+	sf::Sprite GetSprite();
+	virtual void SetType(int type);
+	virtual void SetAction();
+	virtual void Update(float deltaTime);
 	void Init(const string path);
-	void Update(float deltaTime);
 	void Render(sf::RenderWindow &window);
-
+	bool CheckCollision(sf::Sprite );
 };
 

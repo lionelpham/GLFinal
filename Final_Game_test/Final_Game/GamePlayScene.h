@@ -1,9 +1,13 @@
 #pragma once
 
+#include <vector>
+
+
 #include "Scene.h"
 #include "Object.h"
-#include <vector>
 #include "Enemy.h"
+#include "Collision.h"
+
 
 #define ENEMY_COUNT 3
 #define TEXTURE_ENEMY	"resources/enemy.png"

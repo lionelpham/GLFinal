@@ -1,20 +1,19 @@
 #pragma once
 
-
 #include "Object.h"
-#include <iostream>
 
 class Enemy : public Object
 {
 private:
 	int m_dir;
+
 public:
 	Enemy();
 	~Enemy();
-	void setType(int type);
-	void EnemyUp(float &);
-	void EnemyDown(float &);
+	void SetType(int type);
+	void SetAction();
 	void EnemyRotate();
 	void Update(float dt);
+
 };
 
