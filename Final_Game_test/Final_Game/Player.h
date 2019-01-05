@@ -1,10 +1,14 @@
 #pragma once
 
-#include "Object.h"
+#include "ObjectRender.h"
 
-class Player : public Object
+class Player : public ObjectRender
 {
 public:
+	void setPos(float x, float y);
+	Vector2f getPos();
+	void setSize();
+	void Update(float dt) override;
 	Player();
 	~Player();
 };

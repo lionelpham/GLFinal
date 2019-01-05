@@ -13,6 +13,6 @@ public:
 	void SetType(int type);
 	void SetAction();
 	void EnemyRotate();
-	void Update(float dt);
+	void Update(float dt) override;
 };
 

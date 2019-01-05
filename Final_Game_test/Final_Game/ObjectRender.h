@@ -21,6 +21,6 @@ public:
 	bool CheckCollision(sf::Sprite);
 	void Init(const string path);
 	void Render(sf::RenderWindow &window);
-	virtual void Update(float deltaTime);
+	void Update(float deltaTime);
 };
 
