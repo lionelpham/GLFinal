@@ -1,17 +1,11 @@
-﻿  Enemy.cpp
-e:\project\gameloft\final_game_test\final_game\enemy.cpp(75): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+﻿  CameraView.cpp
   GamePlayScene.cpp
-e:\project\gameloft\final_game_test\final_game\gameplayscene.cpp(31): warning C4018: '<': signed/unsigned mismatch
-e:\project\gameloft\final_game_test\final_game\gameplayscene.cpp(33): warning C4018: '<': signed/unsigned mismatch
-e:\project\gameloft\final_game_test\final_game\gameplayscene.cpp(49): warning C4018: '<': signed/unsigned mismatch
-  Object.cpp
-  ObjectRender.cpp
-e:\project\gameloft\final_game_test\final_game\objectrender.cpp(49): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+e:\workspace_github\glfinal\final_game_test\final_game\gameplayscene.cpp(38): warning C4018: '<': signed/unsigned mismatch
+e:\workspace_github\glfinal\final_game_test\final_game\gameplayscene.cpp(40): warning C4018: '<': signed/unsigned mismatch
+e:\workspace_github\glfinal\final_game_test\final_game\gameplayscene.cpp(67): warning C4018: '<': signed/unsigned mismatch
   Player.cpp
-  ResourceManager.cpp
+e:\workspace_github\glfinal\final_game_test\final_game\player.cpp(17): warning C4305: 'argument': truncation from 'double' to 'float'
   SceneManager.cpp
   main.cpp
   Generating Code...
-e:\project\gameloft\final_game_test\final_game\resourcemanager.cpp(38): warning C4700: uninitialized local variable 'image' used
-e:\project\gameloft\final_game_test\final_game\resourcemanager.cpp(45): warning C4700: uninitialized local variable 'font' used
-  Final_Game.vcxproj -> E:\Project\Gameloft\Final_Game_test\\BIN\Final_Game.exe
+  Final_Game.vcxproj -> E:\Workspace_GITHUB\GLFinal\Final_Game_test\\BIN\Final_Game.exe
