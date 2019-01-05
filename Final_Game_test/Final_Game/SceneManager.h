@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Scene.h"
+#include "GamePlayScene.h"
 
 class SceneManager
 {
@@ -19,5 +19,4 @@ public:
 
 };
 
-SceneManager* SceneManager::s_instance = nullptr;
 

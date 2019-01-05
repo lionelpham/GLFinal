@@ -1,14 +1,24 @@
 ﻿  Enemy.cpp
-d:\project\final_game_test\final_game\enemy.cpp(76): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+d:\project\final_game_test\final_game\enemy.cpp(75): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
           with
           [
               T=float
           ]
+  GamePlayScene.cpp
+d:\project\final_game_test\final_game\gameplayscene.cpp(31): warning C4018: '<': signed/unsigned mismatch
+d:\project\final_game_test\final_game\gameplayscene.cpp(33): warning C4018: '<': signed/unsigned mismatch
+d:\project\final_game_test\final_game\gameplayscene.cpp(49): warning C4018: '<': signed/unsigned mismatch
   Object.cpp
-d:\project\final_game_test\final_game\object.cpp(26): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+d:\project\final_game_test\final_game\object.cpp(52): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
+  Player.cpp
+  ResourceManager.cpp
+  SceneManager.cpp
+  main.cpp
   Generating Code...
+d:\project\final_game_test\final_game\resourcemanager.cpp(38): warning C4700: uninitialized local variable 'image' used
+d:\project\final_game_test\final_game\resourcemanager.cpp(45): warning C4700: uninitialized local variable 'font' used
   Final_Game.vcxproj -> D:\Project\Final_Game_test\\BIN\Final_Game.exe
