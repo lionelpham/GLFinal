@@ -1,24 +1,29 @@
-﻿  Enemy.cpp
-d:\project\final_game_test\final_game\enemy.cpp(75): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
+﻿  Collision.cpp
+d:\github\glfinal\final_game_test\final_game\collision.cpp(66): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\github\glfinal\final_game_test\final_game\collision.cpp(67): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\github\glfinal\final_game_test\final_game\collision.cpp(69): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+d:\github\glfinal\final_game_test\final_game\collision.cpp(70): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+d:\github\glfinal\final_game_test\final_game\collision.cpp(132): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+d:\github\glfinal\final_game_test\final_game\collision.cpp(133): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+d:\github\glfinal\final_game_test\final_game\collision.cpp(134): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Enemy.cpp
+d:\github\glfinal\final_game_test\final_game\enemy.cpp(75): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  GameManager.cpp
+  GameOverScene.cpp
   GamePlayScene.cpp
-d:\project\final_game_test\final_game\gameplayscene.cpp(31): warning C4018: '<': signed/unsigned mismatch
-d:\project\final_game_test\final_game\gameplayscene.cpp(33): warning C4018: '<': signed/unsigned mismatch
-d:\project\final_game_test\final_game\gameplayscene.cpp(49): warning C4018: '<': signed/unsigned mismatch
+d:\github\glfinal\final_game_test\final_game\gameplayscene.cpp(31): warning C4018: '<': signed/unsigned mismatch
+d:\github\glfinal\final_game_test\final_game\gameplayscene.cpp(33): warning C4018: '<': signed/unsigned mismatch
+d:\github\glfinal\final_game_test\final_game\gameplayscene.cpp(49): warning C4018: '<': signed/unsigned mismatch
+  LoadingScene.cpp
+  main.cpp
+  MenuScene.cpp
   Object.cpp
-d:\project\final_game_test\final_game\object.cpp(52): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-          with
-          [
-              T=unsigned int
-          ]
+d:\github\glfinal\final_game_test\final_game\object.cpp(52): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
   Player.cpp
   ResourceManager.cpp
+  Scene.cpp
   SceneManager.cpp
-  main.cpp
   Generating Code...
-d:\project\final_game_test\final_game\resourcemanager.cpp(38): warning C4700: uninitialized local variable 'image' used
-d:\project\final_game_test\final_game\resourcemanager.cpp(45): warning C4700: uninitialized local variable 'font' used
-  Final_Game.vcxproj -> D:\Project\Final_Game_test\\BIN\Final_Game.exe
+d:\github\glfinal\final_game_test\final_game\resourcemanager.cpp(38): warning C4700: uninitialized local variable 'image' used
+d:\github\glfinal\final_game_test\final_game\resourcemanager.cpp(45): warning C4700: uninitialized local variable 'font' used
+  Final_Game.vcxproj -> D:\GITHUB\GLFinal\Final_Game_test\\BIN\Final_Game.exe
