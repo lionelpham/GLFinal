@@ -16,10 +16,10 @@ void GamePlayScene::OnInit()
 {
 	for (int i = 0; i < ENEMY_COUNT; i++)
 	{
-		Object* gameObject = new Enemy();
-		v_gameObjects.push_back(gameObject);
-		v_gameObjects[i]->SetType(i + 1);
-		v_gameObjects[i]->Init(TEXTURE_ENEMY);
+		Enemy* enemy = new Enemy();
+		v_gameEnemy.push_back(enemy);
+		v_gameEnemy[i]->SetType(i + 1);
+		v_gameEnemy[i]->Init(TEXTURE_ENEMY);
 	}
 
 }
@@ -28,27 +28,27 @@ void GamePlayScene::OnInit()
 void GamePlayScene::OnUpdate(float deltaTime)
 {
 	bool objectCollision = false;
-	for (int i = 0; i < v_gameObjects.size(); i++)
+	for (int i = 0; i < v_gameEnemy.size(); i++)
 	{
-		if (i < v_gameObjects.size() - 1)
+		if (i < v_gameEnemy.size() - 1)
 		{
-			objectCollision = v_gameObjects[i]->CheckCollision(v_gameObjects[i + 1]->GetSprite());
+			objectCollision = v_gameEnemy[i]->CheckCollision(v_gameEnemy[i + 1]->GetSprite());
 			if (objectCollision)
 			{
-				v_gameObjects[i]->SetAction();
-				v_gameObjects[i + 1]->SetAction();
+				v_gameEnemy[i]->SetAction();
+				v_gameEnemy[i + 1]->SetAction();
 			}
 		}
-		v_gameObjects[i]->Update(deltaTime);
+		v_gameEnemy[i]->Update(deltaTime);
 	}
 }
 
 
 void GamePlayScene::OnRender(sf::RenderWindow &window)
 {
-	for (int i = 0; i < v_gameObjects.size(); i++)
+	for (int i = 0; i < v_gameEnemy.size(); i++)
 	{
-		v_gameObjects[i]->Render(window);
+		v_gameEnemy[i]->Render(window);
 	}
 }
 

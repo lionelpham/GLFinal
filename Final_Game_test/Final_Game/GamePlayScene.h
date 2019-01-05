@@ -17,7 +17,7 @@ using namespace std;
 class GamePlayScene : public Scene
 {
 protected:
-	vector<Object*> v_gameObjects;
+	vector<Enemy*> v_gameEnemy;
 public:
 	GamePlayScene();
 	~GamePlayScene();

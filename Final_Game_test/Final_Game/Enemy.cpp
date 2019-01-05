@@ -14,7 +14,7 @@ Enemy::~Enemy()
 
 void Enemy::SetType(int type)
 {
-	Object::SetType(type);
+	ObjectRender::SetType(type);
 	switch (m_type)
 	{
 	case 1:

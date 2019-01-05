@@ -1,8 +1,8 @@
 #pragma once
 
-#include "Object.h"
+#include "ObjectRender.h"
 
-class Enemy : public Object
+class Enemy : public ObjectRender
 {
 private:
 	int m_dir;
@@ -14,6 +14,5 @@ public:
 	void SetAction();
 	void EnemyRotate();
 	void Update(float dt);
-
 };
 

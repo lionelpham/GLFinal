@@ -7,7 +7,6 @@ class ResourceManager
 {
 private:
 	static ResourceManager* s_instance;
-	Object m_gameObject;
 	string m_dataFolderPatch;
 	map<char, Image*> m_image;
 	map<char, Font*> m_fonts;
