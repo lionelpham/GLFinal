@@ -46,28 +46,31 @@ void Enemy::EnemyRotate()
 
 void Enemy::Init(const string path)
 {
-	ObjectRender::Init(path);
+	ObjectRender::Init(path);						//Init texture first
+													
+	//Set Position for enemy
+
 	switch (m_type)
 	{
+	case 0: //test cloud
+	{
+		this->m_sprite.setTextureRect(IntRect(256, 128, 128, 128));
+		m_sprite.setPosition(WINDOWS_W + 110, WINDOWS_H / 4 - 100);
+		break;
+	}
 	case 1:
 	{
-		m_sprite.setPosition(300, 10);
+		this->setPos(300, 10);
 		break;
 	}
 	case 2:
 	{
-		m_sprite.setPosition(300, WINDOWS_H - m_texture.getSize().y - 10);
-		break;
-	}
-	case 0: //test cloud
-	{
-		this->m_sprite.setTextureRect(IntRect(256,128,128,128));
-		m_sprite.setPosition(WINDOWS_W + 110, WINDOWS_H/4-100);
+		this->setPos(300, WINDOWS_H - m_texture.getSize().y - 10);
 		break;
 	}
 	case 3:
 	{
-		m_sprite.setPosition(WINDOWS_W + 400, WINDOWS_H / 2);
+		this->setPos(WINDOWS_W + 400, WINDOWS_H / 2);
 		return;
 	}
 	}

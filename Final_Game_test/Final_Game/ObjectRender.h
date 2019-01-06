@@ -12,15 +12,18 @@ protected:
 	int m_velocity;
 	int m_type;
 	bool m_isAlive;
+
 public:
 	ObjectRender();
 	~ObjectRender();
+	bool CheckCollision(sf::Sprite);
 	sf::Sprite GetSprite();
+	void setPos(float x, float y);
+	Vector2f getPos();
 	virtual void SetType(int type);
 	virtual void SetAction();
-	bool CheckCollision(sf::Sprite);
-	void Init(const string path);
-	void Render(sf::RenderWindow &window);
+	virtual void Init(const string path);
 	void Update(float deltaTime);
+	void Render(sf::RenderWindow &window);
 };
 

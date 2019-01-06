@@ -16,6 +16,5 @@ public:
 	~Animation();
 	void Init(const string path);
 	void Update(float dt);
-	void setPos(float x, float y);
 };
 
