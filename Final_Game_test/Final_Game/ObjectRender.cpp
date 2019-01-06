@@ -27,6 +27,7 @@ void ObjectRender::SetAction()
 {
 }
 
+
 bool ObjectRender::CheckCollision(sf::Sprite sprite)
 {
 	return (Collision::PixelPerfectTest(this->GetSprite(), sprite));
@@ -37,24 +38,6 @@ void ObjectRender::Init(const string path)
 {
 	Collision::CreateTextureAndBitmask(m_texture, path);
 	m_sprite.setTexture(m_texture);
-	switch (m_type)
-	{
-	case 1:
-	{
-		m_sprite.setPosition(300, 10);
-		break;
-	}
-	case 2:
-	{
-		m_sprite.setPosition(300, WINDOWS_H - m_texture.getSize().y - 10);
-		break;
-	}
-	case 3:
-	{
-		m_sprite.setPosition(WINDOWS_W / 2, WINDOWS_H / 2);
-		return;
-	}
-	}
 }
 
 

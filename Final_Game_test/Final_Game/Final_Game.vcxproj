@@ -143,11 +143,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Animation.cpp" />
     <ClCompile Include="Background.cpp" />
     <ClCompile Include="CameraView.cpp" />
     <ClCompile Include="Collision.cpp" />
     <ClCompile Include="Enemy.cpp" />
-    <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="GameOverScene.cpp" />
     <ClCompile Include="GamePlayScene.cpp" />
     <ClCompile Include="LoadingScene.cpp" />
@@ -161,11 +161,11 @@
     <ClCompile Include="SceneManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Animation.h" />
     <ClInclude Include="Background.h" />
     <ClInclude Include="CameraView.h" />
     <ClInclude Include="Collision.h" />
     <ClInclude Include="Enemy.h" />
-    <ClInclude Include="GameManager.h" />
     <ClInclude Include="GameOverScene.h" />
     <ClInclude Include="GamePlayScene.h" />
     <ClInclude Include="LoadingScene.h" />

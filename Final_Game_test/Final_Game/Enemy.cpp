@@ -44,6 +44,36 @@ void Enemy::EnemyRotate()
 }
 
 
+void Enemy::Init(const string path)
+{
+	ObjectRender::Init(path);
+	switch (m_type)
+	{
+	case 1:
+	{
+		m_sprite.setPosition(300, 10);
+		break;
+	}
+	case 2:
+	{
+		m_sprite.setPosition(300, WINDOWS_H - m_texture.getSize().y - 10);
+		break;
+	}
+	case 0: //test cloud
+	{
+		this->m_sprite.setTextureRect(IntRect(256,128,128,128));
+		m_sprite.setPosition(WINDOWS_W + 110, WINDOWS_H/4-100);
+		break;
+	}
+	case 3:
+	{
+		m_sprite.setPosition(WINDOWS_W + 400, WINDOWS_H / 2);
+		return;
+	}
+	}
+}
+
+
 void Enemy::Update(float dt)
 {
 	switch (m_type)
