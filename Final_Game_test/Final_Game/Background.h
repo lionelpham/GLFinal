@@ -3,9 +3,11 @@
 class Background : public ObjectRender
 {
 public:
-	void fixSize();
-	void Update(float deltatime) override;
 	Background();
 	~Background();
+	void fixSize();
+	void Init(const string path) override;
+	void Update(float deltatime) override;
+	
 };
 

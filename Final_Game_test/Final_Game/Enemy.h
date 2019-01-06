@@ -13,6 +13,7 @@ public:
 	void SetType(int type);
 	void SetAction();
 	void EnemyRotate();
+	void Init(const string path);
 	void Update(float dt) override;
 };
 
