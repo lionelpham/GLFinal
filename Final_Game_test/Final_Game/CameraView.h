@@ -9,7 +9,7 @@ private:
 	sf::View view;
 public:
 	void InitView();
-	void UpdateView(float deltaTime);
+	void UpdateView(float deltaTime, int speed);
 	void SetView(RenderWindow &window);
 	Vector2f getCenterPos();
 	CameraView();

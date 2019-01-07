@@ -30,6 +30,7 @@ void GamePlayScene::OnInit()
 	v_gamePlayer.setSize();
 }
 
+static bool press = false;
 
 void GamePlayScene::OnUpdate(float deltaTime)
 {
@@ -50,17 +51,32 @@ void GamePlayScene::OnUpdate(float deltaTime)
 		}
 		v_gameEnemy[i]->Update(deltaTime);
 	}
+	
+	float distance = 0;
 
-	if (Mouse::isButtonPressed(Mouse::Left)) {
-		v_gamePlayer.Update(deltaTime);
-		
-	}
-	//phhviet: đang bị bug chỗ này
-	float distance = (camera.getCenterPos().x - WINDOWS_W/2) - v_gamePlayer.getPos().x;
-	if (distance < 0)
+		if (Mouse::isButtonPressed(Mouse::Left))
+		{
+				v_gamePlayer.Update(deltaTime, 1200);
+				press = true;
+		}
+		else {
+			//phhviet: đang bị bug chỗ này
+			distance = (camera.getCenterPos().x - WINDOWS_W / 2) - v_gamePlayer.getPos().x;
+			if (-distance - 20 > 0 && press == true)
+				camera.UpdateView(deltaTime, 300);
+			else
+				press = false;
+
+		}
+	
+	//100 vi tri tiep theo nó di chuyen cham toi
+	if (press == false )
 	{
-		camera.UpdateView(deltaTime);
+		v_gamePlayer.Update(deltaTime, 5);
 	}
+	cout << "is press " << press <<endl;
+	/*if (v_gamePlayer.getPos().x < 300 && press == true)
+		v_gamePlayer.Update(deltaTime, 400);  && distance + 100>=0*/
 }
 
 

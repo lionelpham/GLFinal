@@ -1,11 +1,5 @@
-﻿  CameraView.cpp
-  GamePlayScene.cpp
-e:\workspace_github\glfinal\final_game_test\final_game\gameplayscene.cpp(38): warning C4018: '<': signed/unsigned mismatch
-e:\workspace_github\glfinal\final_game_test\final_game\gameplayscene.cpp(40): warning C4018: '<': signed/unsigned mismatch
-e:\workspace_github\glfinal\final_game_test\final_game\gameplayscene.cpp(67): warning C4018: '<': signed/unsigned mismatch
-  Player.cpp
-e:\workspace_github\glfinal\final_game_test\final_game\player.cpp(17): warning C4305: 'argument': truncation from 'double' to 'float'
-  SceneManager.cpp
-  main.cpp
-  Generating Code...
-  Final_Game.vcxproj -> E:\Workspace_GITHUB\GLFinal\Final_Game_test\\BIN\Final_Game.exe
+﻿  GamePlayScene.cpp
+c:\phamhuuhoangviet\github\glfinal\final_game_test\final_game\gameplayscene.cpp(41): warning C4018: '<': signed/unsigned mismatch
+c:\phamhuuhoangviet\github\glfinal\final_game_test\final_game\gameplayscene.cpp(43): warning C4018: '<': signed/unsigned mismatch
+c:\phamhuuhoangviet\github\glfinal\final_game_test\final_game\gameplayscene.cpp(89): warning C4018: '<': signed/unsigned mismatch
+  Final_Game.vcxproj -> C:\PhamHuuHoangViet\Github\GLFinal\Final_Game_test\\BIN\Final_Game.exe

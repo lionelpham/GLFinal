@@ -7,9 +7,9 @@ void CameraView::InitView()
 	view.reset(FloatRect(0, 0, WINDOWS_W, WINDOWS_H));
 }
 
-void CameraView::UpdateView(float deltaTime)
+void CameraView::UpdateView(float deltaTime,int speed)
 {
-	view.move(Vector2f(400*deltaTime,0));
+	view.move(Vector2f(speed*deltaTime,0));
 }
 
 void CameraView::SetView(RenderWindow &window)

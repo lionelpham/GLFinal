@@ -8,7 +8,7 @@ public:
 	void setPos(float x, float y);
 	Vector2f getPos();
 	void setSize();
-	void Update(float dt) override;
+	void Update(float dt, int speed);
 	Player();
 	~Player();
 };

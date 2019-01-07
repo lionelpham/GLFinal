@@ -22,6 +22,7 @@ int main()
 {
 	srand((unsigned int)time(NULL));
 	RenderWindow window(VideoMode(WINDOWS_W, WINDOWS_H), "Alpha Jump Game!", Style::Default);
+	
 	window.setFramerateLimit(FPS_LIMIT);
 
 	// ============================ Init ============================
