@@ -6,7 +6,7 @@ public:
 	Background();
 	~Background();
 	void fixSize();
-	void Init(const string path) override;
+	void Init(const string path);
 	void Update(float deltatime) override;
 	
 };

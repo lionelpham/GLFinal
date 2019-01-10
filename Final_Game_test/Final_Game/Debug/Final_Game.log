@@ -1,2 +1,9 @@
-﻿  Animation.cpp
-  Final_Game.vcxproj -> E:\Project\Gameloft\Week7_test\Final_Game_test\\BIN\Final_Game.exe
+﻿  Enemy.cpp
+e:\project\gameloft\week8\final_game_test\final_game_test\final_game\enemy.cpp(62): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+e:\project\gameloft\week8\final_game_test\final_game_test\final_game\enemy.cpp(68): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\project\gameloft\week8\final_game_test\final_game_test\final_game\enemy.cpp(69): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\project\gameloft\week8\final_game_test\final_game_test\final_game\enemy.cpp(75): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\project\gameloft\week8\final_game_test\final_game_test\final_game\enemy.cpp(76): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\project\gameloft\week8\final_game_test\final_game_test\final_game\enemy.cpp(76): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+e:\project\gameloft\week8\final_game_test\final_game_test\final_game\enemy.cpp(83): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Final_Game.vcxproj -> E:\Project\Gameloft\Week8\Final_Game_test\Final_Game_test\\BIN\Final_Game.exe

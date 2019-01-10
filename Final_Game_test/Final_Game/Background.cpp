@@ -23,6 +23,7 @@ void Background::Init(const string path)
 {
 	ObjectRender::Init(path);
 	fixSize();
+	
 }
 
 

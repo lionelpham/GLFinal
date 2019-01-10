@@ -14,7 +14,8 @@ private:
 public:
 	Animation();
 	~Animation();
-	void Init(const string path);
+	void Init(const string path) override;
+	void SetAnimation();
 	void Update(float dt);
 };
 
