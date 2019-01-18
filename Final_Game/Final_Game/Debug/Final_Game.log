@@ -1,0 +1,22 @@
+﻿  Enemy.cpp
+e:\project\gameloft\alphajump_game\alphajump_game\source\final_game\final_game\enemy.cpp(67): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+e:\project\gameloft\alphajump_game\alphajump_game\source\final_game\final_game\enemy.cpp(73): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\project\gameloft\alphajump_game\alphajump_game\source\final_game\final_game\enemy.cpp(74): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\project\gameloft\alphajump_game\alphajump_game\source\final_game\final_game\enemy.cpp(80): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\project\gameloft\alphajump_game\alphajump_game\source\final_game\final_game\enemy.cpp(81): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\project\gameloft\alphajump_game\alphajump_game\source\final_game\final_game\enemy.cpp(81): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+e:\project\gameloft\alphajump_game\alphajump_game\source\final_game\final_game\enemy.cpp(88): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\project\gameloft\alphajump_game\alphajump_game\source\final_game\final_game\enemy.cpp(122): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\project\gameloft\alphajump_game\alphajump_game\source\final_game\final_game\enemy.cpp(130): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+e:\project\gameloft\alphajump_game\alphajump_game\source\final_game\final_game\enemy.cpp(144): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  GamePlayScene.cpp
+e:\project\gameloft\alphajump_game\alphajump_game\source\final_game\final_game\gameplayscene.cpp(104): warning C4018: '<': signed/unsigned mismatch
+e:\project\gameloft\alphajump_game\alphajump_game\source\final_game\final_game\gameplayscene.cpp(106): warning C4018: '<': signed/unsigned mismatch
+e:\project\gameloft\alphajump_game\alphajump_game\source\final_game\final_game\gameplayscene.cpp(125): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+e:\project\gameloft\alphajump_game\alphajump_game\source\final_game\final_game\gameplayscene.cpp(196): warning C4018: '<': signed/unsigned mismatch
+e:\project\gameloft\alphajump_game\alphajump_game\source\final_game\final_game\gameplayscene.cpp(228): warning C4018: '<': signed/unsigned mismatch
+e:\project\gameloft\alphajump_game\alphajump_game\source\final_game\final_game\gameplayscene.cpp(251): warning C4018: '<': signed/unsigned mismatch
+e:\project\gameloft\alphajump_game\alphajump_game\source\final_game\final_game\gameplayscene.cpp(261): warning C4018: '<': signed/unsigned mismatch
+e:\project\gameloft\alphajump_game\alphajump_game\source\final_game\final_game\gameplayscene.cpp(266): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Final_Game.vcxproj -> E:\Project\Gameloft\AlphaJump_Game\AlphaJump_Game\Source\Final_Game\\BIN\Final_Game.exe
